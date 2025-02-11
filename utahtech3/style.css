@@ -1,15 +1,19 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-image: linear-gradient( #EEEEEE, #FFFFFF);
     background-attachment: fixed;
     color: #666666;
     font-family: Verdana;
-    
+    margin: 0px;
 }
 
 header{
     background-color: #003058;
     color: #FFFFFF;
     font-family: Georgia;
+    grid-area: 1 / 2/ 2/ 8;
 }
 
 header h1{
@@ -19,16 +23,20 @@ header h1{
     background-position: right;
     background-repeat: no-repeat;
     background-origin: content-box;
-    margin-bottom: 0;
+    margin: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 nav{
     font-weight: bold;
-    background-color: #F3F3F3;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
+    background-color: #424242;
+    position: sticky;
+    top: 0;
+    grid-area: 2 / 2 / 3 / 8;
 }
 
 nav a{
@@ -38,6 +46,13 @@ nav a{
 main{
     padding-left: 2rem;
     padding-right: 2rem;
+    background-color: #FFFFFF;
+    grid-area: 4 / 2 / 5 / 8;
+}
+
+main img{
+    float: right;
+    padding-left: 2rem;
 }
 
 h2{
@@ -65,39 +80,39 @@ footer{
     font-style: italic;
     text-align: center;
     padding: 1rem;
+    grid-area: 5 / 2 / 6 / 8;
 }
 
 #wrapper{
-    background-color: #FFFFFF;
-    width: 80%;
-    min-width: 960px;
-    max-width: 2048px;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
+    display: grid;
+    grid-auto-rows: 0px auto;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
 
 #homehero{
-    background-image: url(images/homehero.jpg);
+    background-image: url(utahtech3/images/studenthero.jpg);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    grid-area: 3 / 2 / 4 / 8;
 }
 
 #studenthero{
-    background-image: url(images/studenthero.jpg);
+    background-image: url(utahtech3/images/studenthero.jpg);
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    grid-area: 3 / 2 / 4 / 8;
 }
 
 #facultyhero{
-    background-image: url(images/facultyhero.jpg);
+    background-image: url(utahtech3/images/studenthero.jpg);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    grid-area: 3 / 2 / 4 / 8;
 }
 
