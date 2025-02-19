@@ -1,0 +1,33 @@
+#wrapper{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    background-color: rgba(0, 0, 255, 0.5);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0,175px) minmax(0px, 1fr));
+}
+
+body{
+    background-color: rgba(0, 0, 255, 0.5);
+    grid-area: 1 / 1 / 4 / 4;
+    
+}
+
+nav{
+    background-color: rgba(255, 0, 0, 0.5);
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+header{
+    background-color: rgba(0, 255, 255, 0.5);
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+main{
+    background-color: rgba(0, 255, 0, 0.5);
+    grid-area: 3 / 2 / 3 / 3;
+}
+
+footer{
+    background-color: rgba(255, 255, 0, 0.5);
+    grid-area: 1 / 1 / 1 / 4;
+}
