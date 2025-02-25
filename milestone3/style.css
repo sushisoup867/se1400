@@ -1,8 +1,8 @@
 #wrapper{
-    margin: -10px;
-    padding: -10px;
+    margin: 0px;
+    padding: 0px;
     display: grid;
-    background-color: rgba(0, 0, 255, 0.3);
+    background-color: rgba(255, 255, 0, 0.3);
     grid-template-columns: 30px minmax(0, 1fr) 1fr 30px;
 }
 
@@ -10,6 +10,8 @@ body{
     background-color: rgba(0, 0, 255, 0.3);
     grid-area: 1 / 1 / 4 / 5;
     height: 80px;
+    margin: 0px;
+    padding: 0px;
 }
 
 nav{
