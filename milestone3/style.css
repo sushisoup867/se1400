@@ -3,7 +3,7 @@
     padding: 0px;
     display: grid;
     background-color: rgba(0, 0, 255, 0.3);
-    grid-template-columns: 30px minmax(0, 1fr)  minmax(0, 1fr) 30px;
+    grid-template-columns: 30px minmax(0, 1fr) 30px;
 }
 
 body{
