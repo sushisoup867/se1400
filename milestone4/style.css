@@ -3,12 +3,11 @@
     padding: 0px;
     display: grid;
     width: 100%;
-    background-color: rgba(255, 255, 0, 0.3);
     grid-template-columns: 30px 1fr 1fr 1fr 30px;
 }
 
 body{
-    background-color: rgba(0, 0, 255, 0.3);
+    background-image: url(images/background_image.png);
     grid-area: 1 / 1 / 4 / 5;
     height: 100%;
     margin: 0px;
@@ -16,7 +15,7 @@ body{
 }
 
 nav{
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: #1B3D74;
     grid-area: 1 / 1 / 2 / 6;
     height: auto;
     position: sticky;
@@ -24,6 +23,7 @@ nav{
 }
 
 nav a{
+    color: #FFFFFF;
     text-decoration: none;
     padding: 1rem 0rem;
     display: block;
@@ -43,26 +43,13 @@ nav ul li{
 }
 
 header {
-    background-color: #003058;
-    color: #FFFFFF;
-    font-family: Georgia;
+    background-image: url(images/programing-image.jpeg);
     grid-area: 2 / 2 / 3 / 5;
 }
 
-header h1 {
-    line-height: 140%;
-    padding: .5rem;
-    padding-left: 1em;
-    background-image: url(images/utahtechlogo.svg);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    margin: 0;
-}
-
 main{
-    background-color: rgba(0, 255, 0, 0.3);
-    height: 100%;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
     grid-area: 3 / 2 / 4 / 5;
 }
 
@@ -71,11 +58,34 @@ main h1{
 }
 
 main p{
-    text-align: right;
+    padding-left: 4rem;
 }
 
 footer{
     background-color: rgba(255, 255, 0, 0.3);
     grid-area: 4 / 1 / 5 / 6;
-    height: 100%;
+}
+
+#banner{
+    background-image: url(images/programing-image.jpeg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#side-image{
+    background-image: url(images/school-homepage-image.png);
+    height: 100px;
+    width: 200px;
+    padding-top: 3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#side-right{
+    padding-left: 15rem;
+    grid-area: 3 / 3 / 4 / 6;
 }
