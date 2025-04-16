@@ -1,0 +1,205 @@
+#wrapper{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(0px, 30px) 1fr 1fr 1fr minmax(0px, 30px);
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(images/background_image.png);
+    grid-area: 1 / 1 / 4 / 5;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: #1B3D74;
+    grid-area: 1 / 1 / 2 / 6;
+    height: auto;
+    position: sticky;
+    top: 0;
+    font-family: Georgia;
+}
+
+nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 100%;
+}
+
+header {
+    background-image: url(images/programing-image.jpeg);
+    grid-area: 2 / 2 / 3 / 5;
+}
+
+main{
+    flex: 1;
+    padding: 2rem clamp(2rem, 10vw, 12rem);
+    background-color: rgb(255, 255, 255);
+    grid-area: 3 / 2 / 4 / 5;
+    font-family: Segoe UI;
+}
+
+main h1{
+    text-align: left;
+    color: #1B3D74;
+}
+
+main p{
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem); /* Dynamically scales */
+    padding-left: 4rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #1B3D74;
+    margin: 20px 0;
+}
+
+table{
+    margin: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: #424242;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(2n){
+    background-color: #F3F3F3;
+}
+
+td, th{
+    padding: 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: #424242;
+}
+
+footer{
+    background-color: #1B3D74;
+    color: #FFFFFF;
+    font-family: Georgia;
+    grid-area: 4 / 2 / 5 / 5;
+    position: sticky;
+}
+
+footer a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1rem 0rem;
+}
+
+#banner{
+    background-image: url(images/programing-image.jpeg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#school-homepage-image{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.section-wrapper img {
+    max-width: 300px;
+    height: auto;
+}
+
+.section-wrapper p {
+    flex: 1;
+    padding-left: 0;
+}
+
+.section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 992px){
+    main{
+        padding-left: clamp(1rem, 5vw, 5rem);
+        padding-right: clamp(1rem, 5vw, 5rem);
+    }
+
+    h1{
+        font-size: 3vw;
+    }
+
+    footer{
+        font-size: 1.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .section-wrapper{
+        flex-direction: column;
+    }
+
+    main p {
+        font-size: 0.85rem;
+        padding-left: 1rem;
+    }
+
+    nav a{
+        font-size: 12px;
+    }
+
+    #banner{
+        height: 200px;
+    }
+
+    #school-homepage-image{
+        max-width: 100%;
+    }
+}
