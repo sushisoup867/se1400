@@ -75,6 +75,10 @@ main p{
     overflow-wrap: break-word;
 }
 
+h3{
+    color: #1B3D74;
+}
+
 hr {
     border: none;
     height: 2px;
@@ -180,6 +184,11 @@ footer a{
 .section-wrapper p {
     flex: 1;
     padding-left: 0;
+}
+
+.section-wrapper a{
+    text-decoration: none;
+    color: rgb(100, 100, 100);
 }
 
 .section-4{
