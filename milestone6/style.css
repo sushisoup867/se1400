@@ -1,3 +1,7 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
 #wrapper{
     margin: 0px;
     padding: 0px;
@@ -36,6 +40,11 @@ nav a{
     padding: 1rem 0rem;
     display: block;
     text-align: center;
+}
+
+nav a:hover{
+    background-color: #285bad;
+    border: #F3F3F3 solid;
 }
 
 nav ul{
