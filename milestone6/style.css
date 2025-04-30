@@ -155,6 +155,13 @@ footer a{
     height: auto;
 }
 
+#competition-image{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 5px;
+}
+
 .banner{
     height: 500px;
     background-size: cover;
@@ -234,12 +241,17 @@ footer a{
     align-items: center;
 }
 
-
-
 .competitions-wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.competition-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .top-banner{
@@ -290,6 +302,11 @@ footer a{
     }
 
     #teacher-img{
+        width: 150px;
+        max-width: 100%;
+    }
+
+    #competition-image{
         width: 150px;
         max-width: 100%;
     }
