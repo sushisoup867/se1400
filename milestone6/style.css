@@ -129,12 +129,18 @@ footer a{
     padding: 1rem 0rem;
 }
 
-#banner{
+#index-banner{
     background-image: url(images/programing-image.jpeg);
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+#about-banner{
+    background-image: url(images/homepage_image.png);
+    background-position: 0px -50px;
+}
+
+#competitions-banner{
+    background-image: url(images/competitionbanner.png);
+    background-position: 0px -150px;
 }
 
 #school-homepage-image{
@@ -147,6 +153,13 @@ footer a{
     width: 100%;
     max-width: 200px;
     height: auto;
+}
+
+.banner{
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .background-blur {
